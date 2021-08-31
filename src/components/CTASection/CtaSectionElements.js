@@ -44,7 +44,7 @@ export const CtaContent = styled.div`
   }
 `;
 export const TopLine = styled.h2`
-  font-size: 1.35rem;
+  font-size: clamp(1rem, 3vw, 1.4rem);
   font-weight: 600;
   color: #333;
   text-transform: capitalize;
@@ -66,6 +66,10 @@ export const CtaBtn = styled(Link)`
     margin-left: 3px;
     height: 100%;
     width: 50px;
+  }
+
+  @media screen and (max-width:768px){
+    margin-top: 20px;
   }
 `;
 export const Icon = styled.div`

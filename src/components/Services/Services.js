@@ -27,6 +27,7 @@ import {
   ServicesBtn,
   TriangleOne,
   TriangleTwo,
+  ServicesRightSide
 } from "./ServicesElements";
 
 const Services = () => {
@@ -34,16 +35,18 @@ const Services = () => {
     <ServiceElements id="career">
       <ServicesContainer>
         <ServicesWrapper>
-          <ServicesImages>
-            <ImageFileOne>
-              <TriangleOne/>
-              <ImgOne src={ImageOne} alt="" />
-            </ImageFileOne>
-            <ImageFileTwo>
-              <TriangleTwo/>
-              <ImgTwo src={ImageTwo} alt="" />
-            </ImageFileTwo>
-          </ServicesImages>
+          <ServicesRightSide>
+            <ServicesImages>
+              <ImageFileOne>
+                <TriangleOne />
+                <ImgOne src={ImageOne} alt="" />
+              </ImageFileOne>
+              <ImageFileTwo>
+                <TriangleTwo />
+                <ImgTwo src={ImageTwo} alt="" />
+              </ImageFileTwo>
+            </ServicesImages>
+          </ServicesRightSide>
           <ServicesContent>
             <ServicesHeadLine>
               Start a Profitable Career with <br /> What is about LASSON

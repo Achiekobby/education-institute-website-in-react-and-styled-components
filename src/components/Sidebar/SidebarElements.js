@@ -13,6 +13,7 @@ z-index: 999;
 opacity: ${({ isOpen })=>(isOpen ? "1" :"0")};
 left: ${({ isOpen })=>(isOpen ? "0":"100%")};
 transition: all 1s ease-in-out;
+z-index: 999;
 
 `;
 export const SidebarContainer = styled.div`

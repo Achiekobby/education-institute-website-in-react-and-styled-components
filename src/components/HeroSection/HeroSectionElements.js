@@ -22,14 +22,14 @@ export const HeroWrapper = styled.div`
   
 `;
 export const HeroContent = styled.div`
-  z-index: 10;
+  z-index: 2;
   background: transparent;
   border-left: 3px solid #2ec4b6;
   max-width: 500px;
   padding: 0 1.5rem;
 
   @media screen and (max-width:768px){
-     
+    
   }
 `;
 export const HeroBg = styled.div`
@@ -96,13 +96,14 @@ export const FormElement = styled.form`
   background: #f4f4f4;
   border: 1px solid #2ec4b6;
   height: 50px;
-  width: 80%;
+  max-width:90%;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 5px;
   padding-left: 10px;
+  resize: horizontal;
 
   input {
     outline: none;
@@ -110,17 +111,18 @@ export const FormElement = styled.form`
     background: transparent;
     font-size: 0.85rem;
     font-weight: 600;
+    max-width: 80%;
 
     &::placeholder {
       text-transform: capitalize;
       font-weight: 600;
-      font-size: 0.85rem;
+      font-size:clamp(.65rem, 2vw, 0.85rem);
       color: #999;
     }
   }
 `;
 export const SubmitBtn = styled(Link)`
-  width: 60px;
+  width: min(30vw,60px);
   height: 100%;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -138,6 +140,6 @@ export const SubmitBtn = styled(Link)`
   }
 `;
 export const SearchBtn = styled(FaSearch)`
-font-size: 1.5rem;
+font-size: clamp(0.75rem, 3vw, 1.5rem);
 color: #FFF;
 `;
