@@ -6,8 +6,8 @@ export const links = [
   },
   {
     id: 2,
-    path: "pages",
-    title: "Pages",
+    path: "career",
+    title: "Career",
   },
   {
     id: 3,

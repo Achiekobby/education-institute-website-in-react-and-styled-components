@@ -14,6 +14,7 @@ export const NavbarElements = styled.div`
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 2px 4px rgba(0,0,0,0.2)" : "none"};
   transition: all 0.5s ease-in-out;
+  z-index: 999;
 `;
 export const NavbarContainer = styled.div`
 max-width: 1400px;
