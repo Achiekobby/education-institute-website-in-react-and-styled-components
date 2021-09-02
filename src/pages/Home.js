@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import Comments from "../components/Comments/Comments";
 import Course from "../components/Courses/Course";
 import CtaSection from "../components/CTASection/CtaSection";
 import HeroSection from "../components/HeroSection/HeroSection";
+import Lectures from "../components/Lectures/Lectures";
 import MainNavbar from "../components/MainNavbar/MainNavbar";
 import Services from "../components/Services/Services";
 import Sidebar from "../components/Sidebar/Sidebar";
@@ -29,6 +31,8 @@ const Home = () => {
       <CtaSection/>
       <Services/>
       <Course/>
+      <Lectures/>
+      <Comments/>
     </>
   );
 };
