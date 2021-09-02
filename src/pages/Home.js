@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Course from "../components/Courses/Course";
 import CtaSection from "../components/CTASection/CtaSection";
 import HeroSection from "../components/HeroSection/HeroSection";
 import MainNavbar from "../components/MainNavbar/MainNavbar";
@@ -27,6 +28,7 @@ const Home = () => {
       <HeroSection />
       <CtaSection/>
       <Services/>
+      <Course/>
     </>
   );
 };

@@ -5,6 +5,7 @@ export const CtaElements = styled.div`
   width: 100%;
   height: 15vh;
   margin-top: -50px;
+  
 
   @media screen and (max-width:768px){
       height: 20vh;
@@ -17,7 +18,7 @@ export const CtaContainer = styled.div`
   margin: 0 auto;
 `;
 export const CtaWrapper = styled.div`
-  background: #f4f4f4;
+  background: #FFF;
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
