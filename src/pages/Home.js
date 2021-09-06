@@ -5,6 +5,7 @@ import CtaSection from "../components/CTASection/CtaSection";
 import HeroSection from "../components/HeroSection/HeroSection";
 import Lectures from "../components/Lectures/Lectures";
 import MainNavbar from "../components/MainNavbar/MainNavbar";
+import News from "../components/News/News";
 import Services from "../components/Services/Services";
 import Sidebar from "../components/Sidebar/Sidebar";
 import TopNavbar from "../components/TopNavbar/TopNavbar";
@@ -33,6 +34,7 @@ const Home = () => {
       <Course/>
       <Lectures/>
       <Comments/>
+      <News/>
     </>
   );
 };

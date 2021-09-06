@@ -96,6 +96,7 @@ export const CommentCard = styled.div`
   margin: 0 10px;
   border: 5px solid #eee;
   margin-bottom: 30px;
+  transition: all 1s ease-in-out;
 `;
 export const CommentImage = styled.div`
   transform: translateY(-50%);
