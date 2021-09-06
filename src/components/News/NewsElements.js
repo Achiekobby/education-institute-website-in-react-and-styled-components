@@ -72,7 +72,6 @@ const CardPadding = css`
   padding-right: 20px;
 `;
 export const NewsImage = styled.div`
-  /* width: 50%; */
   height: 100%;
   flex-basis: 50%;
 `;

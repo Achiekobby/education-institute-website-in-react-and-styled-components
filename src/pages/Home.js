@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Comments from "../components/Comments/Comments";
+import Contact from "../components/Contact/Contact";
+import ContactDetails from "../components/Contact/ContactDetails";
 import Course from "../components/Courses/Course";
 import CtaSection from "../components/CTASection/CtaSection";
 import HeroSection from "../components/HeroSection/HeroSection";
@@ -35,6 +37,8 @@ const Home = () => {
       <Lectures/>
       <Comments/>
       <News/>
+      <Contact/>
+      <ContactDetails/>
     </>
   );
 };
