@@ -13,7 +13,7 @@ import {
 
 const News = () => {
   return (
-    <NewsElements>
+    <NewsElements id="news">
       <NewsContainer>
         <NewsHeader>
           <Title>News</Title>

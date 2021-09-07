@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {FaTimes} from "react-icons/fa";
 import {Link} from "react-router-dom";
+import {Link as LinkS} from "react-scroll"
 
 export const SidebarElement = styled.aside`
 position: fixed;
@@ -40,11 +41,16 @@ grid-template-rows: repeat(7, 1fr);
 grid-gap: 2.5rem;
 width: 100%;
 `;
-export const SidebarLink = styled(Link)`
-font-size: 1.5rem;
-font-weight: 500;
-text-align: center;
-color: #0a0a0a;
+export const SidebarLink = styled(LinkS)`
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: #0a0a0a;
+
+  &.active {
+    color: #dd1d62;
+    font-weight: 600;
+  }
 `;
 export const SidebarBtn = styled.div`
 display: flex;

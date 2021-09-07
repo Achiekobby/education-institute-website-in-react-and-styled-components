@@ -4,6 +4,7 @@ import Contact from "../components/Contact/Contact";
 import ContactDetails from "../components/Contact/ContactDetails";
 import Course from "../components/Courses/Course";
 import CtaSection from "../components/CTASection/CtaSection";
+import Footer from "../components/Footer/Footer";
 import HeroSection from "../components/HeroSection/HeroSection";
 import Lectures from "../components/Lectures/Lectures";
 import MainNavbar from "../components/MainNavbar/MainNavbar";
@@ -39,6 +40,7 @@ const Home = () => {
       <News/>
       <Contact/>
       <ContactDetails/>
+      <Footer/>
     </>
   );
 };

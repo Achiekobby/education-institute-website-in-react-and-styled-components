@@ -16,13 +16,13 @@ export const links = [
   },
   {
     id: 4,
-    path: "blog",
-    title: "Blog",
+    path: "about",
+    title: "About Us",
   },
   {
     id: 5,
-    path: "shop",
-    title: "Shop",
+    path: "news",
+    title: "News",
   },
   {
     id: 6,

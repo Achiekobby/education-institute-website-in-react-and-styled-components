@@ -228,6 +228,7 @@ export const ContactDetailsWrapper = styled.div`
 
 export const ContactIcon = styled.i`
   font-size: 2rem;
+  transition: all 0.5s ease-in-out;
 `;
 
 export const ContactDetailsIcon = styled.div`
@@ -239,6 +240,7 @@ export const ContactDetailsIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all .5s ease-in-out;
 `;
 
 export const ContactDetailsCard = styled.div`
@@ -259,6 +261,12 @@ export const ContactDetailsCard = styled.div`
   &:hover ${ContactDetailsIcon} {
     background: #2ec4b6;
     transition: all 0.5s ease-in-out;
+  }
+
+  &:hover {
+    box-shadow: 2px 3px 8px -1px rgba(0, 0, 0, 0.3);
+    border: none;
+    transition: all 0.05s ease-in-out;
   }
 `;
 

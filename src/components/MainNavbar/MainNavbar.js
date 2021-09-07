@@ -53,7 +53,7 @@ const MainNavbar = ({ isOpen }) => {
                       key={link.id}
                       to={link.path}
                       smooth={true}
-                      duration={500}
+                      duration={1000}
                       spy={true}
                       exact="true"
                       offset={-80}

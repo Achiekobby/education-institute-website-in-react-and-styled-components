@@ -18,7 +18,7 @@ import {
 
 const Lectures = () => {
   return (
-    <LecturesElements>
+    <LecturesElements id="about">
       <LecturesContainer>
         <LecturesHead>
           <HeadLine>Lectures</HeadLine>

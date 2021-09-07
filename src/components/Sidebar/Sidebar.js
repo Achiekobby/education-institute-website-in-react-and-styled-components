@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { FaFacebookF, FaGoogle, FaInstagram, FaTwitter } from "react-icons/fa";
 import { links } from "../../data/Navdata";
 import {
@@ -16,12 +16,29 @@ import {
 } from "./SidebarElements";
 
 const Sidebar = ({ isOpen, toggleTimes, closeSideMenu }) => {
+
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const handleScrollNav=()=>{
+    if(window.scrollY >=80){
+      setScrollNav(true)
+    }
+    else{
+      setScrollNav(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollNav)
+  }, [])
+
+
   const iconStyle = {
     marginRight: "50px",
     fontSize: "1.5rem",
   };
   return (
-    <SidebarElement isOpen={isOpen} onClick={toggleTimes}>
+    <SidebarElement scrollNav={scrollNav} isOpen={isOpen} onClick={toggleTimes}>
       <SidebarContainer>
         <SidebarIcon>
           <CloseIcon />
@@ -30,7 +47,17 @@ const Sidebar = ({ isOpen, toggleTimes, closeSideMenu }) => {
           <SidebarMenu>
             {links.map((link) => {
               return (
-                <SidebarLink key={link.id} to={link.path} onClick={closeSideMenu}>
+                <SidebarLink
+                  key={link.id}
+                  to={link.path}
+                  onClick={closeSideMenu}
+                  smooth={true}
+                  duration={1000}
+                  spy={true}
+                  exact="true"
+                  offset={-100}
+                  activeClass="active"
+                >
                   {link.title}
                 </SidebarLink>
               );
