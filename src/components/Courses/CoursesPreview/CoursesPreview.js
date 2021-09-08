@@ -1,5 +1,5 @@
 import React from "react";
-import { CourseData } from "../../../data/Courses/PreviewData";
+import CategoriesFilter from "./CategoriesFilter";
 import {
   CoursePreviewElements,
   CoursePreviewContainer,
@@ -25,48 +25,59 @@ import {
   PriceDetail,
 } from "./CoursesPreviewElements";
 
-const CoursesPreview = () => {
+const CoursesPreview = ({ CourseData, filterCategories, categories}) => {
   return (
-    <CoursePreviewElements id='courses'>
+    <CoursePreviewElements id="courses">
       <CoursePreviewContainer>
         <CoursePreviewHead>
           <HeadLine>Our Awesome Courses</HeadLine>
           <TopLine>Courses</TopLine>
         </CoursePreviewHead>
+        <CategoriesFilter filterCategories={filterCategories} categories={categories}/>
         <CoursePreviewWrapper>
-              {CourseData.map((data,index)=>{
-                  return (
-                    <CoursePreviewCard key={index}>
-                      <CourseCardImage>
-                        <ImgFile src={data.imgFile} alt='' />
-                        <ImgFileOverlay>
-                          <span>{data.overlayContent} </span>Enrolled
-                        </ImgFileOverlay>
-                      </CourseCardImage>
-                      <CardTutor>
-                        <TutorImg>
-                          <TutorImgFile src={data.tutorImg} />
-                        </TutorImg>
-                        <TutorName>{data.tutorName}</TutorName>
-                      </CardTutor>
-                      <CardCourseTitle>{data.courseTitle}</CardCourseTitle>
-                      <CardCourseDesc>{data.courseDesc}</CardCourseDesc>
-                      <hr />
-                      <CourseDetails>
-                        <Lessons>
-                          <Icon>
-                            <OpenBook />
-                          </Icon>
-                          <NumberOfLessons>{data.numberOfLessons} Lessons</NumberOfLessons>
-                        </Lessons>
-                        <PriceDetail>
-                          Price: <span>${data.price}</span>
-                        </PriceDetail>
-                      </CourseDetails>
-                    </CoursePreviewCard>
-                  );
-              })}
-
+          {CourseData.map((data) => {
+            const {
+              id,
+              imgFile,
+              overlayContent,
+              tutorImg,
+              tutorName,
+              courseTitle,
+              courseDesc,
+              numberOfLessons,
+              price,
+            } = data;
+            return (
+              <CoursePreviewCard key={id}>
+                <CourseCardImage>
+                  <ImgFile src={imgFile} alt={courseTitle} />
+                  <ImgFileOverlay>
+                    <span>{overlayContent} </span>Enrolled
+                  </ImgFileOverlay>
+                </CourseCardImage>
+                <CardTutor>
+                  <TutorImg>
+                    <TutorImgFile src={tutorImg} />
+                  </TutorImg>
+                  <TutorName>{tutorName}</TutorName>
+                </CardTutor>
+                <CardCourseTitle>{courseTitle}</CardCourseTitle>
+                <CardCourseDesc>{courseDesc}</CardCourseDesc>
+                <hr />
+                <CourseDetails>
+                  <Lessons>
+                    <Icon>
+                      <OpenBook />
+                    </Icon>
+                    <NumberOfLessons>{numberOfLessons} Lessons</NumberOfLessons>
+                  </Lessons>
+                  <PriceDetail>
+                    Price: <span>${price}</span>
+                  </PriceDetail>
+                </CourseDetails>
+              </CoursePreviewCard>
+            );
+          })}
         </CoursePreviewWrapper>
       </CoursePreviewContainer>
     </CoursePreviewElements>

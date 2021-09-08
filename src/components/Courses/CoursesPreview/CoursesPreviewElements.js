@@ -39,7 +39,6 @@ export const CoursePreviewWrapper = styled.div`
   row-gap: 20px;
   width: 100%;
   place-items: center;
-  
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -155,5 +154,38 @@ export const PriceDetail = styled.p`
 
   span {
     color: #2ec4b6;
+  }
+`;
+
+export const FilterCategories = styled.div`
+  /* margin-left: 20px; */
+  margin-bottom: 20px;
+  width: 100%;
+`;
+export const FilterCategoriesContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+`;
+export const FilterBtn = styled.button`
+  margin-right: 20px;
+  font-size: 0.85rem;
+  color: ${({ active }) => (active ? "#FFF" : "#2ec4b6")};
+  font-weight: 600;
+  transition: all 0.5s ease-in;
+  background: ${({ active }) => (active ? "#2EC4B6" : "transparent")};
+  border: 1px solid #2ec4b6;
+  border-radius: 5px;
+  text-transform: capitalize;
+  padding: 1rem 1.5rem;
+  margin-bottom: 20px;
+
+  &:hover {
+    color: #fff;
+    background: #2ec4b6;
+    font-weight: 600;
+    transition: all 0.5s ease-in;
   }
 `;

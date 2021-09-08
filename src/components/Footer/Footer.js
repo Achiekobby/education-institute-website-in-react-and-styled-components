@@ -103,11 +103,10 @@ const Footer = () => {
           </FooterSection>
         </FooterWrapper>
       </FooterContainer>
-    <FooterCopy>
-        <FooterCopyContent>By Achiekobby, 2021</FooterCopyContent>
-    </FooterCopy>
+      <FooterCopy>
+        <FooterCopyContent>By Achiekobby &copy;2021</FooterCopyContent>
+      </FooterCopy>
     </FooterElements>
-
   );
 };
 

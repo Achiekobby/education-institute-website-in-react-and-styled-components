@@ -17,8 +17,10 @@ import profileImgSix from  "../../assets/images/Profile2.png"
 
 export const CourseData = [
   {
+    id:1,
     imgFile: CardImgOne,
     overlayContent: "356",
+    category:"Development",
     tutorImg: profileImgOne,
     tutorName: "Samrun Whatson",
     courseTitle: "Future Artificial Intelligence",
@@ -29,8 +31,10 @@ export const CourseData = [
   },
 
   {
+    id:2,
     imgFile: CardImgTwo,
     overlayContent: "856",
+    category:"Analysis",
     tutorImg: profileImgTwo,
     tutorName: "Daniel Goldberg",
     courseTitle: "Data Science and Software",
@@ -41,8 +45,10 @@ export const CourseData = [
   },
 
   {
+    id:3,
     imgFile: CardImgThree,
     overlayContent: "356",
+    category:"Engineering",
     tutorImg: profileImgThree,
     tutorName: "Hadi Logus",
     courseTitle: "Cloud Computing",
@@ -53,8 +59,10 @@ export const CourseData = [
   },
 
   {
+    id:4,
     imgFile: CardImgFour,
     overlayContent: "696",
+    category:"Development",
     tutorImg: profileImgFour,
     tutorName: "Hokus Schneider",
     courseTitle: "Mobile App Development",
@@ -65,8 +73,10 @@ export const CourseData = [
   },
 
   {
+    id:5,
     imgFile: CardImgFive,
     overlayContent: "456",
+    category:"Analysis",
     tutorImg: profileImgFive,
     tutorName: "Auturo Vidal",
     courseTitle: "Website Design Development",
@@ -77,8 +87,10 @@ export const CourseData = [
   },
 
   {
+    id:6,
     imgFile: CardImgSix,
     overlayContent: "356",
+    category:"Engineering",
     tutorImg: profileImgSix,
     tutorName: "Seidu Bright",
     courseTitle: "Software Engineering",
