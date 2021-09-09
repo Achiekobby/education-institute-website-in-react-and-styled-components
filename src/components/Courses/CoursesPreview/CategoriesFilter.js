@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import {
   FilterCategories,
   FilterCategoriesContainer,
@@ -6,15 +6,17 @@ import {
 } from "./CoursesPreviewElements";
 
 const CategoriesFilter = ({ categories, filterCategories }) => {
+  const [value, setValue] = useState("all")
   return (
     <FilterCategories>
       <FilterCategoriesContainer>
         {categories.map((data, index) => {
           return (
-            <FilterBtn
+            <FilterBtn className={`${data===value && 'active-btn'}`}
               key={index}
               onClick={() => {
                 filterCategories(data);
+                setValue(data)
               }}
             >
               {data}

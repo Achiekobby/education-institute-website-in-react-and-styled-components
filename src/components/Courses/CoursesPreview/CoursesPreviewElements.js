@@ -182,6 +182,11 @@ export const FilterBtn = styled.button`
   padding: 1rem 1.5rem;
   margin-bottom: 20px;
 
+  &.active-btn{
+    color: #fff;
+    background: #2ec4b6;
+  }
+
   &:hover {
     color: #fff;
     background: #2ec4b6;
