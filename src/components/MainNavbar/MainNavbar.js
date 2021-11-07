@@ -66,7 +66,7 @@ const MainNavbar = ({ isOpen }) => {
               </NavItems>
             </NavMenu>
             <NavBtn>
-              <Button>
+              <Button to="/form">
                 Try for Free{" "}
                 {/* <span>
                   <FaLongArrowAltRight />

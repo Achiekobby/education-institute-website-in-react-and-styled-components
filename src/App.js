@@ -1,6 +1,7 @@
 import GlobalStyle from "./global/GlobalStyles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Form from "./pages/Form";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Router>
         <Switch>
           <Route path='/' exact component={Home}/>
+          <Route path="/form" exact component={Form}/>
         </Switch>
       </Router>
     </div>

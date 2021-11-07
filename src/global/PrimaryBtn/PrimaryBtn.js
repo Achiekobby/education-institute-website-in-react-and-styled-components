@@ -2,12 +2,12 @@ import React from 'react'
 import {PrimaryBtnElement, Icon} from "./PrimaryBtnElements"
 import { BiRightArrowCircle } from "react-icons/bi";
 
-const PrimaryBtn = ({children}) => {
+const PrimaryBtn = ({children, primary, to, type}) => {
     return (
       <>
-        <PrimaryBtnElement to="/sign-up">
+        <PrimaryBtnElement to={!to?"/":to} primary={primary} type = {type}>
           {children}
-          <Icon>
+          <Icon primary={primary}>
             <BiRightArrowCircle />
           </Icon>
         </PrimaryBtnElement>

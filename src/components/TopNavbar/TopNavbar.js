@@ -55,7 +55,7 @@ const TopNavbar = () => {
                     <LoginText>Login</LoginText>
                   </span>
                 </Login>
-                <Register to="/register">
+                <Register to="/form">
                   <IoMdLogIn size="1rem" />
                   <span>
                     <RegisterText>Register</RegisterText>

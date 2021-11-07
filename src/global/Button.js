@@ -7,7 +7,7 @@ export const Button = styled(Link)`
   color: #FFF;
   border-radius: 5px;
   border: none;
-  font-size:${({ wide })=>(wide ? "0.85rem":"0.98rem")};
+  font-size:${({ wide })=>(!wide ? "0.85rem":"0.98rem")};
   transition: all .5s ease;
 
   &:hover{

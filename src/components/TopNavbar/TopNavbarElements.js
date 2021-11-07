@@ -6,6 +6,7 @@ export const TopNavbarElement = styled.div`
   width: 100%;
   height: 50px;
   background: #2ec4b6;
+  z-index:999;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -74,6 +75,7 @@ export const Login = styled(Link)`
   color: #fff;
   font-weight: 500;
   font-size: 0.75rem;
+  cursor: pointer;
 `;
 export const LoginText = styled.p`
 margin-left: 5px;
@@ -83,6 +85,7 @@ export const Register = styled(Link)`
   color: #fff;
   font-weight: 500;
   font-size: 0.75rem;
+  cursor: pointer;
 `;
 export const RegisterText = styled.p`
   margin-left: 5px;
